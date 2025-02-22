@@ -2,11 +2,9 @@
 
 Convert long videos into engaging short clips with auto-cropping, captions, and processing!
 
-[![Demo](https://img.shields.io/badge/Live-Demo-blue)](https://your-vercel-app-link.vercel.app)
-![Python Version](https://img.shields.io/badge/Python-3.11%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-
 ![App Screenshot](./screenshots/app-preview.png)
+![App Screenshot](./screenshots/app-preview-2.png)
+
 
 ## Features ✨
 - 🎞️ Upload videos (MP4, AVI, MOV, MKV)

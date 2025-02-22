@@ -1,0 +1,7 @@
+uploads/
+processed/
+ffmpeg/
+*.mp4
+*.avi
+*.mov
+*.mkv
