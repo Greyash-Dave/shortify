@@ -2,8 +2,11 @@
 
 Convert long videos into engaging short clips with auto-cropping, captions, and processing!
 
-![App Screenshot](./screenshots/app-preview.png)
-![App Screenshot](./screenshots/app-preview-2.png)
+
+<p align="center">
+  <img src="./screenshots/app-preview.png" alt="App Screenshot">
+  <img src="./screenshots/app-preview-2.png" alt="App Screenshot">
+</p>
 
 
 ## Features ✨
