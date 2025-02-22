@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: video-to-short-app
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
