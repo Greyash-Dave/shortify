@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video to Short</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}?v=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Video Processing App</h1>
+            <button id="theme-toggle" class="theme-button">
+                <i id="theme-icon" class="fas fa-moon"></i>
+            </button>
+        </div>
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" name="file" id="file-input" accept=".mp4,.avi,.mov,.mkv" required>
+            
+            <div class="time-range">
+                <label for="start-time">Start Time (seconds):</label>
+                <input type="number" id="start-time" name="start-time" min="0" value="0" required disabled>
+                
+                <label for="end-time">End Time (seconds):</label>
+                <input type="number" id="end-time" name="end-time" min="0" required>
+            </div>
+
+            <button type="submit">Upload and Process</button>
+        </form>
+
+        <div id="uploaded-video-container" class="video-container" style="display: none;">
+            <h2>Uploaded Video</h2>
+            <video id="uploaded-video" controls>
+                <source id="uploaded-video-source" src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div id="progress-container" style="display: none;">
+            <h2>Processing Progress</h2>
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <p id="progress-text">0%</p>
+        </div>
+
+        <div id="download-container" style="display: none;">
+            <h2>Processed Video</h2>
+            <video id="processed-video" controls>
+                <source id="processed-video-source" src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <a id="download-link" href="#" class="download-button">Download Processed Video</a>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+    </div>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        // Load theme preference from localStorage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-mode');
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        } else {
+            body.classList.remove('dark-mode');
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
+        }
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const isDark = body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+            // Update the icon
+            themeIcon.classList.remove('fa-moon', 'fa-sun');
+            themeIcon.classList.add(isDark ? 'fa-sun' : 'fa-moon');
+        });
+
+        // Upload and progress logic
+        document.getElementById('upload-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const fileInput = document.getElementById('file-input');
+            const startTime = document.getElementById('start-time').value;
+            const endTime = document.getElementById('end-time').value;
+
+            const formData = new FormData();
+            formData.append('file', fileInput.files[0]);
+            formData.append('start-time', startTime);
+            formData.append('end-time', endTime);
+
+            fetch('/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.uploaded_video) {
+                    // Show the uploaded video
+                    const uploadedVideo = document.getElementById('uploaded-video-source');
+                    uploadedVideo.src = `/uploads/${data.uploaded_video}`;
+                    document.getElementById('uploaded-video').load();
+                    document.getElementById('uploaded-video-container').style.display = 'block';
+
+                    // Show the progress bar
+                    document.getElementById('progress-container').style.display = 'block';
+
+                    // Start polling for progress
+                    checkProgress();
+                }
+            })
+            .catch(error => {
+                document.getElementById('error').innerText = `Error: ${error.message}`;
+                document.getElementById('error').style.display = 'block';
+            });
+        });
+
+        function checkProgress() {
+            fetch('/progress')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.is_processing) {
+                        // Update progress bar
+                        const progress = document.getElementById('progress');
+                        const progressText = document.getElementById('progress-text');
+                        progress.style.width = `${data.progress}%`;
+                        progressText.innerText = `${data.progress}%`;
+
+                        // Continue polling
+                        setTimeout(checkProgress, 1000);
+                    } else if (data.processed_file) {
+                        // Hide progress bar
+                        document.getElementById('progress-container').style.display = 'none';
+
+                        // Show processed video
+                        const processedVideo = document.getElementById('processed-video-source');
+                        processedVideo.src = `/processed/${data.processed_file}`;
+                        document.getElementById('processed-video').load();
+
+                        // Show download link
+                        const downloadLink = document.getElementById('download-link');
+                        downloadLink.href = `/download/${data.processed_file}`;
+                        document.getElementById('download-container').style.display = 'block';
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('error').innerText = `Error: ${error.message}`;
+                    document.getElementById('error').style.display = 'block';
+                });
+        }
+    </script>
+</body>
+</html>
