@@ -124,7 +124,5 @@ pip freeze > requirements.txt  # Update if adding new packages
 4. Push to the branch
 5. Open a Pull Request
 
-## License 📄
-MIT License - see LICENSE file
 
 **Happy Video Processing!** 🎬 If you enjoy this project, please ⭐ the repository!
