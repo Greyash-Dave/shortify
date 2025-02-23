@@ -1,0 +1,2 @@
+install ffmpeg into this folder
+Link: https://ffmpeg.org/
