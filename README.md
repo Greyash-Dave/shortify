@@ -1,10 +1,15 @@
 # Shortify - Video to Short Converter 🎥✂️
 
 Convert long videos into engaging short clips with auto-cropping, captions, and processing!
+
 <p align="center">
-  ![Screen Shot Image](https://github.com/Greyash-Dave/Greyash-Dave/blob/main/images/shortify/1.PNG)
-  ![Screen Shot Image](https://github.com/Greyash-Dave/Greyash-Dave/blob/main/images/shortify/2.PNG)
-</p>p>
+  <img src="https://raw.githubusercontent.com/Greyash-Dave/Greyash-Dave/main/images/shortify/1.PNG" alt="Screen Shot Image">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Greyash-Dave/Greyash-Dave/main/images/shortify/2.PNG" alt="Screen Shot Image">
+</p>
+
 
 ## Features ✨
 - 🎞️ Upload videos (MP4, AVI, MOV, MKV)
