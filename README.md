@@ -8,7 +8,7 @@ Convert long videos into engaging short clips with auto-cropping, captions, and 
   <img src="./screenshots/app-preview-2.png" alt="App Screenshot">
 </p>
 
-<img src="/Greyash-Dave/tree/main/images/banner.png" alt="App Screenshot">
+<img src="../Greyash-Dave/blob/main/images/banner.png" alt="App Screenshot">
 
 ## Features ✨
 - 🎞️ Upload videos (MP4, AVI, MOV, MKV)
