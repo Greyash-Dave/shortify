@@ -2,13 +2,9 @@
 
 Convert long videos into engaging short clips with auto-cropping, captions, and processing!
 
-
-<p align="center">
-  <img src="./screenshots/app-preview.png" alt="App Screenshot">
-  <img src="./screenshots/app-preview-2.png" alt="App Screenshot">
-</p>
-
-![Banner Image](https://raw.githubusercontent.com/Greyash-Dave/Greyash-Dave/main/images/banner.png)
+![Screen Shot Image](https://github.com/Greyash-Dave/Greyash-Dave/blob/main/images/shortify/1.PNG)
+<br/>
+![Screen Shot Image](https://github.com/Greyash-Dave/Greyash-Dave/blob/main/images/shortify/2.PNG)
 
 
 ## Features ✨
