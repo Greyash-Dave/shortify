@@ -2,9 +2,7 @@
 
 Convert long videos into engaging short clips with auto-cropping, captions, and processing!
 
-<a href="https://www.youtube.com/watch?v=AuHUd4_vvE4">
-  <img src="https://img.youtube.com/vi/AuHUd4_vvE4/0.jpg" alt="Watch the video" width="100%">
-</a> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AuHUd4_vvE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 🔗 [Watch the video on YouTube](https://www.youtube.com/watch?v=AuHUd4_vvE4) 
 
