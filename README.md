@@ -6,6 +6,8 @@ Convert long videos into engaging short clips with auto-cropping, captions, and 
   <img src="https://img.youtube.com/vi/AuHUd4_vvE4/0.jpg" alt="Watch the video" width="100%">
 </a> 
 
+🔗 [Watch the video on YouTube](https://www.youtube.com/watch?v=AuHUd4_vvE4) 
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/Greyash-Dave/Greyash-Dave/main/images/shortify/1.PNG" alt="Screen Shot Image">
 </p>
