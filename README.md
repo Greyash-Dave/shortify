@@ -2,6 +2,10 @@
 
 Convert long videos into engaging short clips with auto-cropping, captions, and processing!
 
+<a href="https://www.youtube.com/watch?v=AuHUd4_vvE4">
+  <img src="https://img.youtube.com/vi/AuHUd4_vvE4/0.jpg" alt="Watch the video" width="100%">
+</a> 
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/Greyash-Dave/Greyash-Dave/main/images/shortify/1.PNG" alt="Screen Shot Image">
 </p>
@@ -9,7 +13,6 @@ Convert long videos into engaging short clips with auto-cropping, captions, and 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Greyash-Dave/Greyash-Dave/main/images/shortify/2.PNG" alt="Screen Shot Image">
 </p>
-
 
 ## Features ✨
 - 🎞️ Upload videos (MP4, AVI, MOV, MKV)
