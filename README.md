@@ -8,7 +8,9 @@ Convert long videos into engaging short clips with auto-cropping, captions, and 
 
 🔗 [Watch the video on YouTube](https://www.youtube.com/watch?v=NynlLpj6_SE) 
 
-<img src="https://raw.githubusercontent.com/Greyash-Dave/Greyash-Dave/main/images/shortify/2.PNG" alt="Screen Shot Image">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Greyash-Dave/Greyash-Dave/main/images/shortify/2.PNG" alt="Screen Shot Image">
+</p>
 
 ## Features ✨
 - 🎞️ Upload videos (MP4, AVI, MOV, MKV)
