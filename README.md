@@ -2,11 +2,11 @@
 
 Convert long videos into engaging short clips with auto-cropping, captions, and processing!
 
-<a href="https://youtu.be/AuHUd4_vvE4">
-  <img src="https://img.youtube.com/vi/AuHUd4_vvE4/0.jpg" alt="Watch the video" width="100%">
+<a href="https://youtu.be/NynlLpj6_SE">
+  <img src="https://img.youtube.com/vi/NynlLpj6_SE/0.jpg" alt="Watch the video" width="100%">
 </a> 
 
-🔗 [Watch the video on YouTube](https://www.youtube.com/watch?v=AuHUd4_vvE4) 
+🔗 [Watch the video on YouTube](https://www.youtube.com/watch?v=NynlLpj6_SE) 
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Greyash-Dave/Greyash-Dave/main/images/shortify/1.PNG" alt="Screen Shot Image">
