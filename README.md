@@ -7,7 +7,9 @@ Convert long videos into engaging short clips with auto-cropping, captions, and 
 </a> 
 
 <hr color="black">
-🔗 [Watch the video on YouTube](https://www.youtube.com/watch?v=NynlLpj6_SE) 
+  <a href="https://youtu.be/NynlLpj6_SE">
+    Watch the video on YouTube
+  </a>
 <hr color="black">
 
 <p align="center">
