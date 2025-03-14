@@ -8,7 +8,7 @@ Convert long videos into engaging short clips with auto-cropping, captions, and 
 
 <hr>
   <a href="https://youtu.be/NynlLpj6_SE">
-    Watch the video on YouTube
+    🔗 Watch the video on YouTube
   </a>
 <hr>
 
