@@ -3,7 +3,7 @@
 Convert long videos into engaging short clips with auto-cropping, captions, and processing!
 
 <a href="https://youtu.be/NynlLpj6_SE">
-  <img src="https://img.youtube.com/vi/NynlLpj6_SE/0.jpg" alt="Watch the video" width="100%">
+  <img src="https://img.youtube.com/vi/NynlLpj6_SE/1.jpg" alt="Watch the video" width="100%">
 </a> 
 
 🔗 [Watch the video on YouTube](https://www.youtube.com/watch?v=NynlLpj6_SE) 
